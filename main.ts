@@ -4,9 +4,8 @@ enum angleType{
 }
 namespace trigonometry {
     // Functions for trigonometry
-
     /**
-    * Reads the angle number based on dimension, radians or degrees
+    * Reads the angle  based on dimension, radians or degrees
     */
     //% weight=30 blockId="trigonometry_sine" block="sine of angle %x | in %angleType"
     export function sine(x: number, Dim: angleType): number {
@@ -17,7 +16,6 @@ namespace trigonometry {
             default: return null
         }
     }
-
     /**
      * Function to calculate sine using Taylor series
      */
@@ -25,15 +23,12 @@ namespace trigonometry {
         // Use Taylor or Maclaurin series upto 6 terms
         return 0
     }
-
     function degToRad(degrees: number) {
      return degrees * (Math.PI / 180);
     };
-
     function radToDeg(rad: number) {
         return rad / (Math.PI / 180);
     };
-
     function factorial(n: number) {
         let answer = 1;
         if (n == 0 || n == 1){
@@ -45,5 +40,4 @@ namespace trigonometry {
             return answer;
         }  
     }
-
 }
