@@ -1,3 +1,6 @@
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(trigonometry.sine(76, angleType.degrees))
+})
 enum angleType{
     radians=1,
     degrees=2,
@@ -20,24 +23,39 @@ namespace trigonometry {
      * Function to calculate sine using Taylor series
      */
     function calculateSine(angle: number, dim: boolean) {
-        // Use Taylor or Maclaurin series upto 6 terms
-        return 0
+        // Use Taylor series upto 9 terms
+        if (!dim) 
+            angle = degToRad(angle);
+
+        return calculateSineUsingTaylor(angle);
     }
+
+    function calculateSineUsingTaylor(angle: number) {
+        let val = 0;
+        for (let i = 1, k = 1; k < 18; i++, k += 2) {
+            if (i % 2)
+                val += (angle ** k)/factorial(k)
+            else
+                val -= (angle ** k)/factorial(k)
+        }
+        return val
+    }
+
     function degToRad(degrees: number) {
-     return degrees * (Math.PI / 180);
-    };
+        return degrees * (Math.PI / 180)
+    }
     function radToDeg(rad: number) {
-        return rad / (Math.PI / 180);
-    };
+        return rad / (Math.PI / 180)
+    }
     function factorial(n: number) {
-        let answer = 1;
+        let answer = 1
         if (n == 0 || n == 1){
-            return answer;
+            return answer
         }else{
-            for(let i = n; i >= 1; i--){
-                answer = answer * i;
+            for(let j = n; j >= 1; j--){
+                answer = answer * j
             }
-            return answer;
+            return answer
         }  
     }
 }
