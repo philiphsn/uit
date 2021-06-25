@@ -20,9 +20,8 @@ namespace trigonometry {
     }
 
     /**
-     * Function to calculate sine
+     * Function to calculate sine using Taylor series
      */
-    //% shim=gatorMoisture::getMoisture
     function calculateSine(angle: number, dim: boolean) {
         // Use series
         return 0
