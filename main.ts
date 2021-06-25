@@ -23,7 +23,20 @@ namespace trigonometry {
      * Function to calculate sine using Taylor series
      */
     function calculateSine(angle: number, dim: boolean) {
-        // Use series
+        // Use Taylor or Maclaurin series
         return 0
     }
+
+    function factorial(n: number) {
+        let answer = 1;
+        if (n == 0 || n == 1){
+            return answer;
+        }else{
+            for(let i = n; i >= 1; i--){
+                answer = answer * i;
+            }
+            return answer;
+        }  
+    }
+
 }
