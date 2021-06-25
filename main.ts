@@ -9,7 +9,7 @@ namespace trigonometry {
     /**
     * Reads the number
     */
-    //% weight=30 blockId="trigonometry_sine" block="Get sine of pin %x | in %angleType"
+    //% weight=30 blockId="trigonometry_sine" block="sine of angle %x | in %angleType"
     export function sine(x: number, type: angleType): number {
     
         switch(type){
