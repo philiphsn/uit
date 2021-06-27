@@ -11,6 +11,7 @@ namespace trigonometry {
     * Reads the angle based on radians or degrees.
     */
     //% color=#fc2003 weight=30 blockId="trigonometry_sine" icon="\uf209" block="sine of angle %x | in %angleType"
+    //% x.shadow="protractorPicker"
     export function sine(x: number, Dim: angleType): number {
     
         switch(Dim){
