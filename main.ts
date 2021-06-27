@@ -8,7 +8,7 @@ enum angleType{
 namespace trigonometry {
     // Functions for trigonometry
     /**
-    * Reads the angle  based on dimension, radians or degrees
+    * Reads the angle based on radians or degrees.
     */
     //% color=#fc2003 weight=30 icon="\uf2db" blockId="trigonometry_sine" block="sine of angle %x | in %angleType"
     export function sine(x: number, Dim: angleType): number {
