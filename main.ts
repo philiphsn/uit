@@ -20,6 +20,40 @@ namespace trigonometry {
             default: return null
         }
     }
+    //% color=#fc2003 weight=30 blockId="trigonometry_sinh" icon="\uf209" block="sinh of x %x"
+    //% x.shadow="protractorPicker"
+    export function sinh(x: number): number {
+    
+        /*switch(Dim){
+            case angleType.radians: return calculateSine(x, true)
+            case angleType.degrees: return  calculateSine(x, false)
+            default: return null
+        }*/
+        return 0
+    }
+    //% color=#fc2003 weight=30 blockId="trigonometry_cosh" icon="\uf209" block="cosh of x %x"
+    //% x.shadow="protractorPicker"
+    export function cosh(x: number): number {
+    
+        /*switch(Dim){
+            case angleType.radians: return calculateSine(x, true)
+            case angleType.degrees: return  calculateSine(x, false)
+            default: return null
+        }*/
+        return 0
+    }
+    //% color=#fc2003 weight=30 blockId="trigonometry_tanh" icon="\uf209" block="tanh of x %x"
+    //% x.shadow="protractorPicker"
+    export function tanh(x: number): number {
+    
+        /*switch(Dim){
+            case angleType.radians: return calculateSine(x, true)
+            case angleType.degrees: return  calculateSine(x, false)
+            default: return null
+        }*/
+        return 0
+    }
+
     /**
      * Function to calculate sine using Taylor series
      */
