@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(trigonometry.sine(76, angleType.degrees))
+    basic.showNumber(trigonometry.sine(0, angleType.radians))
 })
 enum angleType{
     radians=1,
@@ -10,7 +10,7 @@ namespace trigonometry {
     /**
     * Reads the angle based on radians or degrees.
     */
-    //% color=#fc2003 weight=30 icon="\uf2db" blockId="trigonometry_sine" block="sine of angle %x | in %angleType"
+    //% color=#fc2003 weight=30 blockId="trigonometry_sine" icon="\uf209" block="sine of angle %x | in %angleType"
     export function sine(x: number, Dim: angleType): number {
     
         switch(Dim){
