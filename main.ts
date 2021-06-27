@@ -10,7 +10,7 @@ namespace trigonometry {
     /**
     * Reads the angle  based on dimension, radians or degrees
     */
-    //% weight=30 blockId="trigonometry_sine" block="sine of angle %x | in %angleType"
+    //% color=#fc2003 weight=30 icon="\uf2db" blockId="trigonometry_sine" block="sine of angle %x | in %angleType"
     export function sine(x: number, Dim: angleType): number {
     
         switch(Dim){
